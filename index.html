@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <!-- Aspetta che penso come farlo -->
+  <!-- Possiamo scegliere tra to-do list e lista della spesa, tipo -->
+  <!-- Nella to-do list ci sono cose urgenti e cose non urgenti -->
+  <!-- Posso anche creare una tendina che si apra con dentro delle note -->
+  <!-- Nella lista della spesa, invece non so se mettere una divisione -->
+  <body>
+    <header>
+      <h1>LISTS</h1>
+    </header>
+    <main>
+      <section class="lists">
+        <h2 id="to-do">COSE DA FARE</h2>
+        <div id="urgent">
+          <h3>Urgente</h3>
+          <div>
+            <ul></ul>
+          </div>
+        </div>
+        <div id="not-urgent">
+          <h3>Non urgente</h3>
+          <div><ul></ul></div>
+        </div>
+      </section>
+      <section id="shopping-list" class="lists">
+        <h2>SPESA</h2>
+        <div>
+          <ul></ul>
+        </div>
+      </section>
+
+      <section>
+        <button id="add-el" onclick="appearElement(event)">
+          Aggiungi elemento
+        </button>
+        <form id="request-form-type">
+          <!-- <div>
+            <p>A quale lista vuoi aggiungere l'elemento?</p>
+          </div> -->
+          <div>
+            <legend>A quale lista vuoi aggiungere l'elemento?</legend>
+            <label for="element1">Lista di cose da fare</label>
+            <input
+              type="radio"
+              id="element1"
+              name="form-type-el"
+              value="Lista di cose da fare"
+            />
+            <label for="element2">Lista della spesa</label>
+            <input
+              type="radio"
+              id="element2"
+              name="form-type-el"
+              value="Lista della spesa"
+            />
+          </div>
+          <button>Scegli questa lista!</button>
+        </form>
+        <form id="form-to-do" class="form-type">
+          <div id="urgent-or-not">
+            <label for="urgent">Urgente</label>
+            <input type="radio" id="urgent" name="is-urgent" value="Urgente" />
+            <label for="not-urgent">Non urgente</label>
+            <input
+              type="radio"
+              id="not-urgent"
+              name="is-urgent"
+              value="Non urgente"
+            />
+          </div>
+          <div>
+            <label for="what-to-do">Cosa devi fare?</label>
+            <input id="what-to-do" required />
+          </div>
+          <!-- <div>
+            <label for="notes-to-do">Note</label>
+            <input id="notes-to-do" />
+          </div>  -->
+          <button>Aggiungi elemento</button>
+        </form>
+        <form id="form-shopping" class="form-type">
+          <div>
+            <label for="el-shopping">Cosa devi comprare?</label>
+            <input type="text" id="el-shopping" required />
+          </div>
+          <!-- <div>
+            <label for="quantity-shopping">Quanti ne devi comprare?</label>
+            <input type="text" id="quantity-shopping" />
+          </div>
+          <div>
+            <label for="price-shopping">Sai quando costa?</label>
+            <input type="text" id="price-shopping" />
+          </div> -->
+          <button>Aggiungi elemento</button>
+        </form>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
