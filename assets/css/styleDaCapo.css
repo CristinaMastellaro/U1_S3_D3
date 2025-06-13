@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://wallpapercave.com/wp/wp8799076.jpg"); 
+    background-size: 120%;
+    background-repeat: no-repeat;
+    /* background-color: #fff0fe; */
+}
+
+main {
+    margin: 2em auto;
+    padding: 1em;
+    width: 60%;
+    min-height: 650px;
+    /* background-color: rgb(249, 227, 231); */
+    background-image: url("https://wallpapercave.com/wp/wp5225276.jpg");
+    border-radius: 50px;
+    border: 1px solid rosybrown;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    /* color: #5FC0DF; */
+    padding: 2em 0 1em 0;
+}
+
+#lista {
+    min-height: 300px;
+    max-width: 300px;
+    margin: 2em auto;
+    border: 1px solid #5FC0DF;
+    padding: 1em;
+    /* background-color: #7CD2E2; */
+    /* background-color: #C4E0E9; */
+    background-image: url("https://wallpapercave.com/wp/wp8799076.jpg");
+    background-position: 50% 49%;
+    border-radius: 15px;
+}
+
+form button {
+    background-color: #5FC0DF;
+    border: 0;
+}
+
+#lista p {
+    display: inline-block;
+    width: 90%;
+}
+
+.elLista {
+    margin: 0.5em;
+    list-style-type: none;
+    background-color: pink;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+i {
+    visibility: hidden;
+    color: #fff0fe;
+}

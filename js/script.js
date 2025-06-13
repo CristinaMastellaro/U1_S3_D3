@@ -17,7 +17,7 @@ const compileFormShopping = (e) => {
 
     list.innerHTML += `<li>
     <div>
-    <button onclick="remove(event)">Remove</button>
+    <i class="fal fa-times" onclick="remove(event)"></i>
     <p style="display: inline" onclick="cancel(event)">${thing}</p>
     </div></li>`;
     form.style.display = "none";
@@ -49,7 +49,7 @@ const compileFormToDo = (e) => {
 
     list.innerHTML += `<li>
     <div>
-    <button onclick="remove(event)">Remove</button>
+    <i class="fal fa-times" onclick="remove(event)"></i>
     <p style="display: inline" onclick="cancel(event)">${thing}</p>
     </div></li>`;
     form.style.display = "none";
@@ -80,19 +80,13 @@ const saveChoice = (e) => {
 
 const remove = (e) => {
   console.log("e.target.parentElement", e.target.parentElement);
+  //potevi mettere closest() > devo capire bene come funziona
   e.target.parentElement.parentElement.remove();
 };
 
 const cancel = (e) => {
   e.preventDefault();
-  //   if (!e.target.innerHTML.contain("cancel")) {
   e.target.classList.add("cancel");
-  //   } else {
-  //     e.target.classList.remove("cancel");
-  //   }
 };
 
 firstForm.addEventListener("submit", saveChoice);
-
-// Quando crei un elemento, ricordati di mettere vicino
-// l'immagine di un cestino

@@ -1,8 +1,8 @@
 body {
     text-align: center;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    /* width: 1500px; */
+    /* margin-left: auto;
+    margin-right: auto; */
     border: 1px solid black;
     margin-top: 2em;
     background-color:antiquewhite;
@@ -10,6 +10,9 @@ body {
 
 header, main {
     background-color: white;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -31,10 +34,12 @@ main section {
 }
 
 main .lists {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 2em 2em 2em 2em;
     min-height: 300px;
     width: 250px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid black;
     padding: 1em;
     background-color: antiquewhite;
@@ -43,11 +48,26 @@ main .lists {
 
 main .lists h2 {
     font-size: 1.5em;
-    padding: 1em 0;
+    padding: 1em 0 0.5em 0;
 }
 
 main .lists div {
     margin: 0.8em;
+}
+
+#to-do {
+    display: inline-block;
+}
+
+#shopping-list {
+    display: inline-block;
+}
+
+.lists button {
+    padding: 0.5em;
+    color: pink;
+    background-color: white;
+    border: 0;
 }
 
 form {

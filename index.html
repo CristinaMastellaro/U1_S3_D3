@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task List</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <!-- Aspetta che penso come farlo -->
@@ -14,26 +15,37 @@
   <!-- Nella lista della spesa, invece non so se mettere una divisione -->
   <body>
     <header>
-      <h1>LISTS</h1>
+      <h1>LISTE</h1>
     </header>
     <main>
-      <section class="lists">
-        <h2 id="to-do">COSE DA FARE</h2>
-        <div id="urgent">
-          <h3>Urgente</h3>
+      <section>
+        <div class="lists">
+          <div>
+            <h2 id="to-do">COSE DA FARE</h2>
+            <div>
+              <input placeholder="Aggiungi cosa da fare" />
+              <button>+</button>
+            </div>
+          </div>
+          <!-- <div id="urgent">
+            <h3>Urgente</h3>
+            <div>
+              <ul></ul>
+            </div>
+          </div>
+          <div id="not-urgent">
+            <h3>Non urgente</h3>
+            <div><ul></ul></div>
+          </div> -->
+        </div>
+        <div class="lists">
+          <div>
+            <h2 id="shopping-list">SPESA</h2>
+            <button>+</button>
+          </div>
           <div>
             <ul></ul>
           </div>
-        </div>
-        <div id="not-urgent">
-          <h3>Non urgente</h3>
-          <div><ul></ul></div>
-        </div>
-      </section>
-      <section id="shopping-list" class="lists">
-        <h2>SPESA</h2>
-        <div>
-          <ul></ul>
         </div>
       </section>
 
