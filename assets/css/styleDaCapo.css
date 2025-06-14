@@ -3,10 +3,13 @@ body {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("https://wallpapercave.com/wp/wp8799076.jpg"); 
+    /* background-image: url("https://wallpapercave.com/wp/wp8799076.jpg"); 
     background-size: 120%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    /* background: linear-gradient(0deg,rgba(201, 232, 238, 1) 0%, rgba(104, 211, 237, 1) 100%); */
+    /* background-position: ; */
     /* background-color: #fff0fe; */
+    background-color: rgba(165, 42, 42);
 }
 
 main {
@@ -15,29 +18,52 @@ main {
     width: 60%;
     min-height: 650px;
     /* background-color: rgb(249, 227, 231); */
-    background-image: url("https://wallpapercave.com/wp/wp5225276.jpg");
+    /* background-image: url("https://wallpapercave.com/wp/wp5225276.jpg"); */
+    /* background-image: url("https://wallpapers.com/images/hd/white-wood-background-25f26e8mt90a8p3n.jpg");
+    background-size: 170%;
     border-radius: 50px;
-    border: 1px solid rosybrown;
+    border: 1px solid white; */
+}
+
+section {
+    background-image: url("https://wallpapers.com/images/hd/white-wood-background-25f26e8mt90a8p3n.jpg");
+    background-size: 170%;
+    border-radius: 50px;
+    border: 2px solid black;
+    margin: 1em;
 }
 
 h1 {
     font-size: 2em;
     font-weight: bold;
-    /* color: #5FC0DF; */
-    padding: 2em 0 1em 0;
+    /* color: rgb(255, 162, 178); */
+    padding-top: 1em;
+    display: inline-block;
+    width: 55%;
 }
 
-#lista {
-    min-height: 300px;
+.title i {
+    display: inline-block;
+    margin-top: 2em;
+}
+
+.lista {
+    min-height: 100px;
     max-width: 300px;
     margin: 2em auto;
-    border: 1px solid #5FC0DF;
+    border: 1px solid black;
     padding: 1em;
-    /* background-color: #7CD2E2; */
-    /* background-color: #C4E0E9; */
-    background-image: url("https://wallpapercave.com/wp/wp8799076.jpg");
-    background-position: 50% 49%;
+    background-color: white;
+    /* background-image: url("https://wallpapercave.com/wp/wp5225276.jpg"); */
+    /* background-image: url("https://st3.depositphotos.com/5531122/16429/i/1600/depositphotos_164291094-stock-photo-abstract-rustic-surface-white-wood.jpg");
+    background-size: 160%; */
     border-radius: 15px;
+    /* visibility: hidden; */
+    display: none;
+}
+
+form {
+    padding: 1em;
 }
 
 form button {
@@ -45,24 +71,28 @@ form button {
     border: 0;
 }
 
-#lista p {
+.lista p {
     display: inline-block;
-    width: 90%;
+    width: 80%;
 }
 
 .elLista {
     margin: 0.5em;
     list-style-type: none;
-    background-color: pink;
+    /* background-color: rgb(255, 228, 233); */
+    background-color: rgba(165, 42, 42);
     padding: 0.5em;
     border-radius: 10px;
+    color: white;
 }
 
 .line-through {
     text-decoration: line-through;
 }
 
-i {
+.lista i {
     visibility: hidden;
-    color: #fff0fe;
+    color: white;
+    display: inline-block;
+    margin-left: 0.5em;
 }

@@ -16,18 +16,44 @@
   </head>
   <body>
     <main>
-      <h1>Lista di cose da fare</h1>
-      <form>
-        <!-- Aggiungere il bottone e l'input -->
-        <input type="text" placeholder="Aggiungi cosa da fare" />
-        <button onclick="createListEl(event)">+</button>
-      </form>
-      <div id="lista">
-        <ul>
-          <!-- Qui si metteranno gli elementi -->
-          <!-- Ricordati che devono avere un bottone per cancellarsi e un modo per tratteggliarli se sono stati completati -->
-        </ul>
-      </div>
+      <section id="to-do-list">
+        <div id="titleToDo" class="title">
+          <i
+            class="fas fa-chevron-right"
+            id="icon-todo"
+            onclick="appearList(event)"
+          ></i>
+          <h1>Lista di cose da fare</h1>
+        </div>
+        <form onreset="appearList(event)">
+          <input type="text" placeholder="Aggiungi cosa da fare" />
+          <button onclick="createListEl(event)">+</button>
+        </form>
+        <div class="lista">
+          <ul></ul>
+        </div>
+      </section>
+      <section id="shopping-list">
+        <div id="titleSpesa" class="title">
+          <i
+            class="fas fa-chevron-right"
+            id="icon-shopping"
+            onclick="appearList(event)"
+          ></i>
+          <h1>Lista di cose da comprare</h1>
+        </div>
+        <form onreset="appearList(event)">
+          <!-- Aggiungere il bottone e l'input -->
+          <input type="text" placeholder="Aggiungi cosa da comprare" />
+          <button onclick="createListEl(event)">+</button>
+        </form>
+        <div class="lista">
+          <ul>
+            <!-- Qui si metteranno gli elementi -->
+            <!-- Ricordati che devono avere un bottone per cancellarsi e un modo per tratteggliarli se sono stati completati -->
+          </ul>
+        </div>
+      </section>
     </main>
     <script src="./js/scriptDaCapo.js"></script>
   </body>
